@@ -14,11 +14,11 @@ Bem-vindo(a) às aulas de Programação Orientada a Objetos (POO) com foco no de
 
 /POO
 |-- /src
-|-- |--/sistemabancario
-|   |-- contacorrente.ts
-|   |-- poupanca.ts
-|   |-- contageral.ts
-|   |-- cliente.ts
+|-- |-- /sistemabancario
+|      |-- contacorrente.ts
+|      |-- poupanca.ts
+|      |-- contageral.ts
+|      |-- cliente.ts
 
 # Instruções para baixar o projeto das aulas
 
