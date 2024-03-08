@@ -12,14 +12,6 @@ Bem-vindo(a) às aulas de Programação Orientada a Objetos (POO) com foco no de
      - Atributos e Métodos
      - Herança e Polimorfismo
 
-/POO
-|-- /src
-|-- |-- /sistemabancario
-|      |-- contacorrente.ts
-|      |-- poupanca.ts
-|      |-- contageral.ts
-|      |-- cliente.ts
-
 # Instruções para baixar o projeto das aulas
 
 ```bash
