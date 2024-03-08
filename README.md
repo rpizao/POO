@@ -31,5 +31,5 @@ run debug dev
 Dica: Implemente novas funcionalidades, aplicando os conceitos aprendidos.
 Crie novos relacionamentos, com novas classes. Enriqueça os modelos criados em aula.
 
-#Licença
+# Licença
 Este projeto é distribuído sob a Licença MIT - sinta-se à vontade para utilizar, modificar e distribuir conforme necessário.
