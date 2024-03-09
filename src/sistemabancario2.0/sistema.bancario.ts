@@ -1,5 +1,4 @@
 import { ContaCorrente } from "./conta.corrente";
-import { Poupanca } from "./poupanca";
 
 export class SistemaBancario {
     private static CONTAS_CORRENTE: ContaCorrente[] = [];
