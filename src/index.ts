@@ -1,30 +1,26 @@
-import { SistemaBancario } from "./sistema.bancario";
-import { Cliente } from "./sistemabancario/cliente";
-import { ContaCorrente } from "./sistemabancario/conta.corrente";
-
-/*
-const contaCorrenteDoPizao = new ContaCorrente(cliente, ag, cc);
-contaCorrenteDoPizao.agencia = 1;
-contaCorrenteDoPizao.conta = 9;
-
-contaCorrenteDoPizao.depositar(100);
-
-console.log("EXTRATO");
-for(let itemExtrato of contaCorrenteDoPizao.consultarExtrato()) {
-    console.log(`${itemExtrato}`);
-}
-
-contaCorrenteDoPizao.sacar(50);
-
-console.log("EXTRATO");
-for(let itemExtrato of contaCorrenteDoPizao.consultarExtrato()) {
-    console.log(`${itemExtrato}`);
-}
- */
+import { SistemaBancario } from "./sistemabancario2.0/sistema.bancario";
 
 const sistema = new SistemaBancario();
+sistema.adicionarContaCorrente("00001-0", 5000);
+sistema.adicionarContaCorrente("00001-1", 1500);
+sistema.adicionarContaCorrente("00001-2");
 
-const cliente1 = new Cliente();
-cliente1.nome = "Rafael";
+console.log(`Minhas contas corrente:`);
+console.log(SistemaBancario.listaContasCorrente);
 
-sistema.imprimirExtrato(cliente1, "CC");
+try {
+    sistema.realizarSaqueContaCorrente("00001-0", 500);
+
+    console.log(`Minhas contas corrente:`);
+    console.log(SistemaBancario.listaContasCorrente);
+
+    sistema.realizarDepositoContaCorrente("00001-2", 100);
+
+    console.log(`Minhas contas corrente:`);
+    console.log(SistemaBancario.listaContasCorrente);
+
+    sistema.realizarDepositoContaCorrente("00001-9", 100);
+}
+catch(erro) {
+    console.log(erro);
+}

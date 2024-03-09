@@ -1,0 +1,46 @@
+Sistema Bancário
+
+[Sistema bancário] onde é possível realizar [saques], [depósito] e [visualizar o saldo]
+nas [contas corrente] e [poupança].
+
+Cada conta deve pertencer a um [cliente] e o cliente pode ter várias contas 
+(tanto corrente quanto poupança).
+Também dever ser possível [imprimir a movimentação das contas], as entradas e saídas.
+Conta poupança deve ter o [rendimento] que será aplicado futuramente 
+(não considera o valor atualizado ainda, só informativo) e a conta corrente deverá
+possuir um limite de [cheque especial].
+
+
+class Poupanca {
+    // atributos de classe
+    numero da conta
+    saldo
+    ...
+    // Métodos de classe
+    saque()
+}
+
+
+
+Identificador
+ID
+Chave candidata
+
+// Para contas corrente e poupança identificador é agencia+conta
+
+- Identifica unicamente a nossa classe.
+let lista: ContaCorrente[] = [];
+for(let cc of lista) {
+    if(cc.agencia == "0001" && cc.conta == "9999") {
+        return cc;
+    }
+    return null;
+}
+
+// Lista de clientes
+CPF é único por cliente
+Identidade
+Número do passaporte
+Número PIS
+Numero SUS
+

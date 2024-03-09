@@ -1,0 +1,21 @@
+Sistema Bancário
+
+[Sistema bancário]
+
+class SistemaBancario {
+    cc: ContaCorrente[];
+    pp: Poupanca[];
+
+    saque();
+    deposito();
+    visualizarSaldo();
+}
+
+
+realizar [saques], [depósito] e [visualizar o saldo]
+[contas corrente] e [poupança].
+
+[cliente]
+[imprimir a movimentação das contas]
+[rendimento]
+[cheque especial].

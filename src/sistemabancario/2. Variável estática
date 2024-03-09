@@ -1,0 +1,22 @@
+// Classe e Objeto
+
+// Classe
+export class Cliente {
+    static prefixo: string = "SIS_";
+
+    identificador: string; // SIS_<numero aleatorio único>
+    nome: string;
+}
+
+// Objetos
+let clienteRafael = new Cliente();
+cliente.nome = "Rafael";
+cliente.prefixo = "SYS_";
+
+let cliente2 = new Cliente();
+cliente2.nome = "Rafael";
+console.log(cliente2.prefixo);
+
+let cliente3 = new Cliente();
+cliente3.nome = "João";
+console.log(cliente3.prefixo);
